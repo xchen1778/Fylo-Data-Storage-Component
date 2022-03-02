@@ -1,0 +1,405 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  min-height: 100%;
+  background-image: url("images/bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 800px) {
+  html {
+    background-color: #0c122c;
+    background-image: url("images/bg-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+  }
+}
+
+html body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html main {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  html main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.75fr;
+        grid-template-columns: 1fr 1.75fr;
+    gap: 2rem;
+  }
+}
+
+html main .upload {
+  background-color: #1d2c67;
+  border-radius: 0.6em;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2.5rem;
+  border-top-right-radius: 8rem;
+}
+
+html main .upload .upload-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+
+html main .upload .upload-type .document, html main .upload .upload-type .folder, html main .upload .upload-type .cloud {
+  padding: 0.8rem;
+  background-color: #0c122c;
+  border-radius: 0.5em;
+  width: 1.78rem;
+  height: 1.78rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .progress {
+  background-color: #1d2c67;
+  border-radius: 0.6em;
+  padding: 3rem 3rem 3.5rem 3rem;
+  color: #dddbff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.3rem;
+  position: relative;
+}
+
+@media (min-width: 800px) {
+  html main .progress {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+html main .progress .info {
+  text-align: center;
+  font-size: clamp(1rem, calc(0.7rem + 1vw), 1.1rem);
+}
+
+@media (min-width: 800px) {
+  html main .progress .info {
+    text-align: left;
+  }
+}
+
+html main .progress .info span {
+  font-weight: 700;
+}
+
+html main .progress .progress-bar {
+  min-width: 100%;
+  min-height: 1.4rem;
+  background-color: #151e49;
+  border-radius: 3rem;
+  position: relative;
+}
+
+html main .progress .progress-bar::before {
+  content: "";
+  min-width: 81.5%;
+  min-height: 1.1rem;
+  position: absolute;
+  top: 0.15rem;
+  left: 0.17rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(90deg, #ffa399 0%, #ff4d97 100%);
+  border-radius: 2.8rem;
+}
+
+html main .progress .progress-bar::after {
+  content: "";
+  min-width: 0.8rem;
+  min-height: 0.8rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 0.3rem;
+  right: 18.5%;
+}
+
+html main .progress .progress-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  margin-top: -0.5rem;
+}
+
+html main .progress .storage-left {
+  background-color: white;
+  max-width: 12rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: #848794;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.6em;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+html main .progress .storage-left p:nth-of-type(1) {
+  color: #0c122c;
+  font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  html main .progress .storage-left {
+    top: -30%;
+    right: 3rem;
+    bottom: auto;
+    left: auto;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    border-bottom-right-radius: 0;
+  }
+  html main .progress .storage-left::after {
+    content: "";
+    min-width: 0;
+    min-height: 0;
+    border-top: 1.5rem solid white;
+    border-left: 1.5rem solid transparent;
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
